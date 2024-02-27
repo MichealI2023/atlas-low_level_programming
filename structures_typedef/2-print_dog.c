@@ -2,31 +2,20 @@
 #include <stdlib.h>
 #include "dog.h"
 
-/**
- * print_dog - ..
- * @d: ...
+
+
+/*
+ *
  */
-typedef struct Dog {
-    char *name;
-    float age;
-    char *owner;
-} Dog;
 
-void print_dog(Dog *d) {
-    if (d == NULL) {
-        printf("Name: (nil)\n");
-        printf("Age: (nil)\n");
-        printf("Owner: (nil)\n");
-    } else {
-        printf("Name: %s\n", d->name ? d->name : "(nil)");
-        printf("Age: %.6f\n", d->age);
-        printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
-    }
+void print_dog(struct dog *d);
+{
+	if (d == NULL)
+                return;
+        if (d->name == NULL)
+            d->name = NULL/n;
+        if (d->owner == NULL)
+            d->name = NULL/n;
+
+      printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner)
 }
-
-int main() {
-    Dog my_dog = {NULL, 0.0, NULL};
-    print_dog(&my_dog);
-
-    return 0
-}      
